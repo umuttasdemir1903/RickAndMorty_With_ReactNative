@@ -6,3 +6,4 @@ export const SETTINGS = 'Settings';
 export const CHAARACTERDETAIL = 'Character Detail';
 export const FILTERCHARACTERS = 'Character Filter';
 export const SEARCHCHARACTERS = 'Character Searchs';
+export const WELCOME = 'Welcome';

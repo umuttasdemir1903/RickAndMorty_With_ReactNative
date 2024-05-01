@@ -2,8 +2,10 @@ import {ScrollView, StyleSheet, Image, View, Text} from 'react-native';
 import React, {useEffect} from 'react';
 import {screensStyle} from '../../styles/screenStyle';
 import {useDispatch, useSelector} from 'react-redux';
-import store from '../../store';
-import {getsingleCharacter} from '../../store/actions/charactersAction';
+import {
+  getsingleCharacter,
+  resetData,
+} from '../../store/actions/charactersAction';
 import Spinner from '../../components/UI/Spinner';
 import Colors from '../../theme/colors';
 
@@ -20,7 +22,7 @@ const CharacterDetail = ({route}) => {
   useEffect(() => {
     dispatch(getsingleCharacter(characterID));
     return () => {
-      console.log(characterID);
+      dispatch(resetData());
     };
   }, []);
 

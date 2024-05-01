@@ -6,7 +6,7 @@ const Spinner = () => {
   return (
     <View style={styles.container}>
       <ActivityIndicator size={'large'} color={Colors.PURPLE} />
-      <Text>Loading...</Text>
+      <Text style={{color: Colors.PURPLE}}>Loading...</Text>
     </View>
   );
 };

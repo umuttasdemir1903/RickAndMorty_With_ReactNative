@@ -1,8 +1,9 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {CHAARACTERDETAIL, TABNAVIGATOR} from '../utils/routes';
+import {CHAARACTERDETAIL, TABNAVIGATOR, WELCOME} from '../utils/routes';
 import TabNavigation from './tabNavigation';
 import CharacterDetail from '../screens/Characters/CharacterDetail';
 import {tabBarStyle} from '../styles/tabBarStyle';
+import WelcomeScreen from '../screens/Welcome';
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +14,11 @@ const RootNavigation = () => {
         headerStyle: tabBarStyle.headerStyle,
         headerBackTitleVisible: false,
       }}>
+      <Stack.Screen
+        options={{headerShown: false}}
+        name={WELCOME}
+        component={WelcomeScreen}
+      />
       <Stack.Screen
         options={{headerShown: false}}
         name={TABNAVIGATOR}
