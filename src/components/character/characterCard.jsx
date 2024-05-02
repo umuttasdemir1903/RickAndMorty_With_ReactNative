@@ -55,13 +55,14 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   imageContainer: {
-    flex: 1,
+    flex: 1.5,
   },
   infoContainer: {
     flex: 2,
     justifyContent: 'space-around',
   },
   iconContainer: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'flex-end',
     marginLeft: 10,
