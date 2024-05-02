@@ -10,6 +10,7 @@ import {
   RESET_DATA,
   SINGLECHARACTER_REJECT,
 } from '../types/charactersTypes';
+import {status} from '../../utils/constants';
 
 const initialState = {
   charactersList: [],
@@ -20,6 +21,8 @@ const initialState = {
   error: null,
   params: {
     page: 1,
+    status: null,
+    gender: null,
   },
 };
 

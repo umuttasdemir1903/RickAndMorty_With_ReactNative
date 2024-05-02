@@ -7,6 +7,7 @@ import SettingsScreen from '../screens/Settings';
 import Colors from '../theme/colors';
 import {tabBarStyle} from '../styles/tabBarStyle';
 import TabIcon from '../components/router/TabIcon';
+import HeaderRight from '../components/router/headerRight';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,6 +26,7 @@ const TabNavigation = () => {
         headerStyle: tabBarStyle.headerStyle,
         tabBarStyle: tabBarStyle.tabBarStylee,
         tabBarActiveTintColor: Colors.PURPLE,
+        headerRight: () => <HeaderRight />,
       })}>
       <Tab.Screen name={CHARACTERS} component={CharactersScreen} />
       <Tab.Screen name={EPISODES} component={EpisodesScreen} />

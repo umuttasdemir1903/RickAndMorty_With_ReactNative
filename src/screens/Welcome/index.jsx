@@ -10,8 +10,17 @@ import React from 'react';
 import Colors from '../../theme/colors';
 import {TABNAVIGATOR} from '../../utils/routes';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import {useDispatch, useSelector} from 'react-redux';
+import {changeParams} from '../../store/actions/charactersAction';
 
 const WelcomeScreen = ({navigation}) => {
+  const dispatch = useDispatch();
+  const {params} = useSelector(state => state.characters);
+  const goCharacterPage = () => {
+    dispatch(changeParams({page: 1, gender: null, status: null}));
+
+    navigation.navigate(TABNAVIGATOR);
+  };
   return (
     <View style={styles.bg}>
       <ImageBackground
@@ -20,9 +29,7 @@ const WelcomeScreen = ({navigation}) => {
         style={styles.image}>
         <View style={styles.buttonContainerBorder}>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity
-              style={styles.button}
-              onPress={() => navigation.navigate(TABNAVIGATOR)}>
+            <TouchableOpacity style={styles.button} onPress={goCharacterPage}>
               <Text style={styles.textGo}>GO</Text>
             </TouchableOpacity>
           </View>
