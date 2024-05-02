@@ -14,15 +14,15 @@ import ItemInSearchScreen from '../../components/character/itemInSearchScreen';
 
 // create a component
 const SearchCharacters = () => {
-  const {characterList, pending, params} = useSelector(
+  const {charactersList, pending, params} = useSelector(
     state => state.characters,
   );
-  console.log(characterList);
+
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getCharacters(params));
-    console.log('useEffect çalıştı');
   }, []);
 
   const handleSumbit = () => {
@@ -61,7 +61,7 @@ const SearchCharacters = () => {
   return (
     <View style={screensStyle.container}>
       <FlatList
-        data={characterList}
+        data={charactersList}
         renderItem={({item}) => <ItemInSearchScreen item={item} />}
         ListHeaderComponent={ListHeaderComponent}
         // onEndReachedThreshold={0.5}

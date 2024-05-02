@@ -17,7 +17,7 @@ const WelcomeScreen = ({navigation}) => {
   const dispatch = useDispatch();
   const {params} = useSelector(state => state.characters);
   const goCharacterPage = () => {
-    dispatch(changeParams({page: 1, gender: null, status: null}));
+    // dispatch(changeParams({page: 1, gender: null, status: null}));
 
     navigation.navigate(TABNAVIGATOR);
   };
