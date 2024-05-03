@@ -14,9 +14,7 @@ import ItemInSearchScreen from '../../components/character/itemInSearchScreen';
 
 // create a component
 const SearchCharacters = () => {
-  const {charactersList, pending, params} = useSelector(
-    state => state.characters,
-  );
+  const {charactersList, params} = useSelector(state => state.characters);
 
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();

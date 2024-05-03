@@ -40,7 +40,7 @@ const CharacterDetail = ({route}) => {
             }}>
             <View style={{height: 200, width: 200}}>
               <Image
-                source={{uri: singleCharacter.image}}
+                source={{uri: singleCharacter?.image}}
                 style={{
                   width: '100%',
                   height: '100%',

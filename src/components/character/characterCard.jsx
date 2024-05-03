@@ -20,7 +20,7 @@ const CharacterCard = ({item}) => {
         <Image
           style={styles.image}
           source={{
-            uri: item.image,
+            uri: item?.image,
           }}
         />
       </View>

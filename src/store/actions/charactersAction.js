@@ -1,4 +1,3 @@
-import axios from 'axios';
 import {
   CHANGE_PARAMS,
   CHARACTERS_REJECT,
