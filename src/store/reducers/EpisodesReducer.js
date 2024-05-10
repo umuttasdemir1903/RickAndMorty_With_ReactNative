@@ -1,3 +1,5 @@
+import {FETCH_EPISODES} from '../types/EpisodesTypes';
+
 const initialState = {
   episodesList: [],
   pending: false,
@@ -6,7 +8,7 @@ const initialState = {
 
 export const EpisodesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case value:
+    case FETCH_EPISODES:
       return state;
 
     default:
