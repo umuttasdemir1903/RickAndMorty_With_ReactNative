@@ -4,12 +4,10 @@ import {
   FILTERCHARACTERS,
   SEARCHCHARACTERS,
   TABNAVIGATOR,
-  WELCOME,
 } from '../utils/routes';
 import TabNavigation from './tabNavigation';
 import CharacterDetail from '../screens/Characters/CharacterDetail';
 import {tabBarStyle} from '../styles/tabBarStyle';
-import WelcomeScreen from '../screens/Welcome';
 import SearchCharacters from '../screens/Characters/SearchCharacters';
 import FilterCharacters from '../screens/Characters/FilterCharacters';
 
@@ -22,11 +20,6 @@ const RootNavigation = () => {
         headerStyle: tabBarStyle.headerStyle,
         headerBackTitleVisible: false,
       }}>
-      <Stack.Screen
-        options={{headerShown: false}}
-        name={WELCOME}
-        component={WelcomeScreen}
-      />
       <Stack.Screen
         options={{headerShown: false}}
         name={TABNAVIGATOR}

@@ -1,20 +1,17 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
-  ChartSquare,
-  Element3,
-  Home,
-  LocationTick,
-  PresentionChart,
-  Profile2User,
-  Setting2,
+  Location,
+  Notepad,
+  Setting,
+  User,
 } from 'iconsax-react-native';
 import {CHARACTERS, EPISODES, LOCATIONS, SETTINGS} from '../../utils/routes';
 
 const TabIcon = ({screenName, focused, size, color}) => {
   if (screenName == CHARACTERS)
     return (
-      <Profile2User
+      <User
         size={focused ? '34' : size}
         color={color}
         variant={focused ? 'Bold' : 'Outline'}
@@ -22,7 +19,7 @@ const TabIcon = ({screenName, focused, size, color}) => {
     );
   if (screenName == EPISODES)
     return (
-      <Element3
+      <Notepad
         size={focused ? '34' : size}
         color={color}
         variant={focused ? 'Bold' : 'Outline'}
@@ -30,7 +27,7 @@ const TabIcon = ({screenName, focused, size, color}) => {
     );
   if (screenName == LOCATIONS)
     return (
-      <LocationTick
+      <Location
         size={focused ? '34' : size}
         color={color}
         variant={focused ? 'Bold' : 'Outline'}
@@ -38,7 +35,7 @@ const TabIcon = ({screenName, focused, size, color}) => {
     );
   if (screenName == SETTINGS)
     return (
-      <Setting2
+      <Setting
         size={focused ? '34' : size}
         color={color}
         variant={focused ? 'Bold' : 'Outline'}

@@ -7,7 +7,7 @@ const Colors = {
   RED: '#fd1d00',
   BROWN: '#7f7558',
   BACKTITLECOLOR: '#f3f4f4',
-  PURPLE: '#ba68c8',
+  PURPLE: '#48bfe3',
 };
 
 export default Colors;
