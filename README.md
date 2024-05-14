@@ -1,11 +1,9 @@
-# Rick and Morty App React-Native
+<h1>Rick and Morty App</h1>
 
-This project is developed using React Native and REDUX.
-<br/>
-<br/> This application provides information about Rick and Morty Characters
-<br/>
+<h3>I created this project using React Native and Redux</h3>
 
-## Used Technologies:
+
+<h1>Used Technologies</h1>
 
 - React Native
 - React Stack Navigation
@@ -14,6 +12,7 @@ This project is developed using React Native and REDUX.
 - React-Native-Animatable
 - Iconsax
 
-<h2> Find the screen gif below </h2>
+-----
+Screeen gif
 
-![](/rm2.gif)
+![](/gif.mp4)
